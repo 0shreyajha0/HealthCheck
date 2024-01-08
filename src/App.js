@@ -1,24 +1,25 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Component/Header";
-import Footer from "./component/Footer";
 import MainSection from "./Component/MainSection";
 import PopUp from "./Component/PopUp";
+import Footer from "./Component/Footer";
 
 const App = () => {
-  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(false);
 
-  useEffect(() => {
-    const storedUserName = localStorage.getItem("userName");
-    if (!storedUserName) {
-      setShowPopup(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storedUserName = localStorage.getItem("userName");
+  //   if (!storedUserName) {
+  //     setShowPopup(true);
+  //   }
+  // }, []);
 
   return (
     <div className="App">
       <Header />
 
-      {showPopup && <PopUp />}
+      {/* {showPopup && <PopUp />} */}
+      <PopUp />
 
       <main>
         <MainSection />
