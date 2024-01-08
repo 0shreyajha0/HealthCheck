@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Components/Header";
-import Footer from "./components/Footer";
-import MainSection from "./Components/MainSection";
-import PopUp from "./Components/PopUp";
+import Header from "./Component/Header";
+import Footer from "./component/Footer";
+import MainSection from "./Component/MainSection";
+import PopUp from "./Component/PopUp";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -18,7 +18,7 @@ const App = () => {
     <div className="App">
       <Header />
 
-      {showPopup && <Popup />}
+      {showPopup && <PopUp />}
 
       <main>
         <MainSection />
