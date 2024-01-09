@@ -10,9 +10,8 @@ let Footer = () => {
         <div className={styles.container}>
           <p className={styles.footerText}>
             <b>
-              Made with <SiReact className={styles.reactIcon} />{" "}
-              <FaHeart className={styles.reactIcon} /> React and Love{" "}
-              <br> HealthCheck </br>
+              Made with <SiReact className={styles.reactIcon} /> React and
+              <FaHeart className={styles.reactIcon} /> Love HealthCheck
             </b>
           </p>
         </div>

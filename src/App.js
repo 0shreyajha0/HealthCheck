@@ -5,26 +5,22 @@ import PopUp from "./Component/PopUp";
 import Footer from "./Component/Footer";
 
 const App = () => {
-  // const [showPopup, setShowPopup] = useState(false);
+  // const [showPopUp, setShowPopUp] = useState(false);
 
   // useEffect(() => {
   //   const storedUserName = localStorage.getItem("userName");
   //   if (!storedUserName) {
-  //     setShowPopup(true);
+  //     setShowPopUp(true);
   //   }
   // }, []);
 
   return (
     <div className="App">
       <Header />
-
-      {/* {showPopup && <PopUp />} */}
-      <PopUp />
-
+      {/* <PopUp/> */}
       <main>
         <MainSection />
       </main>
-
       <Footer />
     </div>
   );

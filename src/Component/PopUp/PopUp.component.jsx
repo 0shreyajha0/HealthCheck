@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import Popup from "reactjs-popup";
 import styles from "./Popup.module.css";
 
-const Popup = () => {
+const PopUp = () => {
   const [userName, setUserName] = useState("");
 
   const handleInputChange = (e) => {
@@ -16,7 +17,7 @@ const Popup = () => {
     <div className={styles.Popup}>
       <div className={styles.formContainer}>
         <h2>Welcome to HealthCheck!</h2>
-        <p>Please enter your name:</p>
+        <p>Please Enter Your Name:</p>
         <form>
           <input
             type="text"
@@ -38,4 +39,4 @@ const Popup = () => {
   );
 };
 
-export default Popup;
+export default PopUp;
